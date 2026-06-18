@@ -1,0 +1,142 @@
+{|class="wikitable" style="width:100%; text-align: center;"
+|-
+!Tab
+!Always Available
+!Science<br>Tier 1<br>{{Pic32|Science Machine}}
+!Science<br>Tier 2<br>{{Pic32|Alchemy Engine}}
+!Magic<br>Tier 1<br>{{Pic32|Prestihatitator}}
+!Magic<br>Tier 2<br>{{Pic32|Shadow Manipulator}}
+!Ancient<br>Tier 1<br>[[File:Broken Pseudoscience Station.png|32px|link=Ancient Pseudoscience Station]]
+!Ancient<br>Tier 2<br>{{Pic32|Ancient Pseudoscience Station}}
+!Blueprint<br>{{Pic32|Blueprint}}
+|-
+![[File:Icon Tools.png|48px|link=Tools Tab]]<br>[[Tools Tab|Tools]]
+| {{Pic32|Axe}} {{Pic32|Pickaxe}} {{Pic32|Hammer}}
+| {{Pic32|Shovel}}  {{Pic32|Pitchfork}} {{Pic32|Razor}} {{Pic32|Feather Pencil}}
+| {{Pic32|Luxury Axe}} {{Pic32|Regal Shovel}} {{Pic32|Opulent Pickaxe}} {{Pic32|Saddlehorn}} {{Pic32|Saddle}} {{Pic32|War Saddle}} {{Pic32|Glossamer Saddle}} {{Pic32|Brush}} {{Pic32|Salt Lick}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Light.png|48px|link=Light Tab]]<br>[[Light Tab|Light]]
+| {{Pic32|Campfire}} {{Pic32|Fire Pit}} {{Pic32|Torch}}
+| {{Pic32|Endothermic Fire}}
+| {{Pic32|Miner Hat}} {{Pic32|Pumpkin Lantern}} {{Pic32|Lantern}} {{Pic32|Endothermic Fire Pit}} {{Pic32|Moggles}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Survival.png|48px|link=Survival Tab]]<br>[[Survival Tab|Survival]]
+| {{Pic32|Trap}} {{Pic32|Pretty Parasol}}
+| {{Pic32|Bird Trap}} {{Pic32|Compass}} {{Pic32|Backpack}} {{Pic32|Healing Salve}} {{Pic32|Straw Roll}} {{Pic32|Umbrella}} {{Pic32|Bug Net}} {{Pic32|Fishing Rod}}
+| {{Pic32|Piggyback}} {{Pic32|Honey Poultice}} {{Pic32|Fur Roll}} {{Pic32|Tent}} {{Pic32|Thermal Stone}} {{Pic32|Siesta Lean-to}} {{Pic32|Luxury Fan}} {{Pic32|Insulated Pack}}
+|
+|
+|
+|
+| {{Pic32|Bundling Wrap}}
+|-
+![[File:Icon Food.png|48px|link=Food Tab]]<br>[[Food Tab|Food]]
+|
+| {{Pic32|Basic Farm}} {{Pic32|Bee Box}} {{Pic32|Drying Rack}} {{Pic32|Crock Pot}}
+| {{Pic32|Improved Farm}} {{Pic32|Ice Box}} {{Pic32|Bucket-o-poop}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Science.png|48px|link=Science Tab]]<br>[[Science Tab|Science]]
+| {{Pic32|Science Machine}} 
+| {{Pic32|Alchemy Engine}} {{Pic32|Electrical Doodad}} {{Pic32|Winterometer}} {{Pic32|Rainometer}} {{Pic32|Lightning Rod}}
+| {{Pic32|Divining Rod}} {{Pic32|Gunpowder}} {{Pic32|Accomploshrine}} {{Pic32|Ice Flingomatic}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Fight.png|48px|link=Fight Tab]]<br>[[Fight Tab|Fight]]
+| {{Pic32|Grass Suit}} {{Pic32|Battle Spear}} {{Pic32|Battle Helm}}
+| {{Pic32|Spear}} {{Pic32|Log Suit}} {{Pic32|Bee Mine}} {{Pic32|Sleep Dart}} {{Pic32|Fire Dart}} {{Pic32|Blow Dart}}
+| {{Pic32|Ham Bat}} {{Pic32|Marble Suit}} {{Pic32|Football Helmet}} {{Pic32|Boomerang}} {{Pic32|Tooth Trap}} {{Pic32|Scalemail}} {{Pic32|Weather Pain}} {{Pic32|Morning Star}}
+| 
+|
+|
+|
+|
+|-
+![[File:Icon Structures.png|48px|link=Structures Tab]]<br>[[Structures Tab|Structures]]
+| {{Pic32|Spider Eggs}}
+| {{Pic32|Chest}} {{Pic32|Sign}} {{Pic32|Mini Sign}} {{Pic32|Wood Fence}} {{Pic32|Hay Wall}} {{Pic32|Wood Wall}}
+| {{Pic32|Wood Gate}} {{Pic32|Stone Wall}} {{Pic32|Pig House}} {{Pic32|Rabbit Hutch}} {{Pic32|Birdcage}} {{Pic32|Cobblestones}} {{Pic32|Wooden Flooring}} {{Pic32|Carpeted Flooring}} {{Pic32|Checkerboard Flooring}} {{Pic32|Potted Fern}} {{Pic32|Scaled Chest}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Refine.png|48px|link=Refine Tab]]<br>[[Refine Tab|Refine]]
+|
+| {{Pic32|Rope}} {{Pic32|Boards}} {{Pic32|Cut Stone}} {{Pic32|Papyrus}} {{Pic32|Beeswax}} {{Pic32|Wax Paper}}
+|
+| {{Pic32|Purple Gem}} {{Pic32|Nightmare Fuel}}
+|
+|
+|
+|
+|-
+![[File:Icon Magic.png|48px|link=Magic Tab]]<br>[[Magic Tab|Magic]]
+| 
+| {{Pic32|Prestihatitator}}
+|
+| {{Pic32|Shadow Manipulator}} {{Pic32|Meat Effigy}} {{Pic32|Pan Flute}} {{Pic32|One-man Band}} {{Pic32|Night Light}} {{Pic32|Life Giving Amulet}} {{Pic32|Chilled Amulet}} {{Pic32|Ice Staff}}
+| {{Pic32|Dark Sword}} {{Pic32|Night Armor}} {{Pic32|Bat Bat}} {{Pic32|Fire Staff}} {{Pic32|Telelocator Staff}} {{Pic32|Telelocator Focus}} {{Pic32|Nightmare Amulet}} {{Pic32|Belt of Hunger}} {{Pic32|Seaworthy}} {{Pic32|Skyworthy}}
+|
+|
+| {{Pic32|Old Bell}}
+|-
+![[File:Icon Dress.png|48px|link=Dress Tab]]<br>[[Dress Tab|Dress]]
+| {{Pic32|Garland}} {{Pic32|Straw Hat}}
+| {{Pic32|Rabbit Earmuffs}} {{Pic32|Beefalo Hat}} {{Pic32|Top Hat}} {{Pic32|Fashion Melon}}
+| {{Pic32|Sewing Kit}} {{Pic32|Beekeeper Hat}} {{Pic32|Feather Hat}} {{Pic32|Bush Hat}} {{Pic32|Winter Hat}} {{Pic32|Walking Cane}} {{Pic32|Dapper Vest}} {{Pic32|Breezy Vest}} {{Pic32|Puffy Vest}} {{Pic32|Ice Cube}} {{Pic32|Summer Frest}} {{Pic32|Cat Cap}} {{Pic32|Rain Hat}} {{Pic32|Rain Coat}} {{Pic32|Hibearnation Vest}} {{Pic32|Eyebrella}} {{Pic32|Floral Shirt}}
+|
+|
+|
+|
+|
+|-
+![[File:Icon Books.png|48px|Books|link=Books]]<br>[[Books]]
+| [[File:Birds of the World.png|32px|link=Books#Birds of the World|Birds of the World]] [[File:Applied Horticulture.png|32px|link=Books#Applied Horticulture|Applied Horticulture]]
+|
+| [[File:On Tentacles.png|32px|link=Books#On Tentacles|On Tentacles]]
+| [[File:Sleepytime Stories.png|32px|link=Books#Sleepytime Stories|Sleepytime Stories]]
+| [[File:The End is Nigh.png|32px|link=Books#The End is Nigh|The End Is Nigh]]
+|
+|
+|
+|-
+![[File:Icon Tinkering.png|48px|Tinkering|link=Tinkering]]<br>[[Tinkering Tab|Tinkering]]
+| {{Pic32|Spectoggles}} {{Pic32|Infroggles}} {{Pic32|Visor}} {{Pic32|Fryfocals}} {{Pic32|Telebrella}} {{Pic32|Telipad}} {{Pic32|Thumper}}
+|
+|
+|
+|
+|
+|
+|
+|-
+![[File:Icon Ancient.png|48px|Ancient|link=Ancient Tab]]<br>[[Ancient Tab|Ancient]]
+|
+|
+|
+|
+|
+| {{Pic32|Thulecite}} {{Pic32|Thulecite Wall}} {{Pic32|Thulecite Medallion}} {{Pic32|Magiluminescence}} {{Pic32|Construction Amulet}} {{Pic32|Star Caller's Staff}} {{Pic32|Deconstruction Staff}} 
+| {{Pic32|The Lazy Forager}} {{Pic32|The Lazy Explorer}} [[File:PickSlashAxe.png|32px|link=Pick/Axe]] {{Pic32|Thulecite Club}} {{Pic32|Thulecite Suit}} {{Pic32|Thulecite Crown}} {{Pic32|Houndius Shootius}}
+|
+|}

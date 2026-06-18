@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS: Reign of Giants Recipes</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:          #1a1a1a;
+            --surface:     #222018;
+            --surface-2:   #2c2820;
+            --border:      #4a4030;
+            --border-hi:   #f5d97a;
+            --text:        #e8dfc8;
+            --text-muted:  #a09070;
+            --text-dim:    #6a6050;
+            --accent:      #f5d97a;
+            --accent-dim:  #c8a850;
+            --hover-bg:    #332e22;
+            --danger:      #f08050;
+            --radius:      7px;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 16px 72px;
+        }
+
+        h1 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            margin-bottom: 36px;
+        }
+
+        .main-col {
+            width: 100%;
+            max-width: 720px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        /* ── shared label ── */
+        .section-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            color: var(--text-muted);
+            margin-bottom: 7px;
+        }
+
+        /* ── custom dropdown ── */
+        .dropdown { position: relative; }
+
+        .dropdown-trigger {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: var(--surface-2);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            cursor: pointer;
+            outline: none;
+            text-align: left;
+            transition: border-color 0.15s;
+        }
+        .dropdown-trigger:hover,
+        .dropdown-trigger[aria-expanded="true"] { border-color: var(--border-hi); }
+
+        .trigger-text       { flex: 1; }
+        .trigger-text.empty { color: var(--text-muted); font-style: italic; }
+
+        .trigger-chevron {
+            color: var(--text-dim);
+            font-size: 0.65rem;
+            transition: transform 0.2s;
+            flex-shrink: 0;
+        }
+        .dropdown-trigger[aria-expanded="true"] .trigger-chevron { transform: rotate(180deg); }
+
+        .dropdown-panel {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0; right: 0;
+            background: var(--surface-2);
+            border: 1px solid var(--border-hi);
+            border-radius: var(--radius);
+            max-height: 340px;
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+            overflow: hidden;
+        }
+        .dropdown-panel[hidden] { display: none; }
+
+        .search-wrap {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 8px 7px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        .btn-close-panel {
+            flex-shrink: 0;
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: color 0.12s, border-color 0.12s;
+        }
+        .btn-close-panel:hover { color: var(--danger); border-color: var(--danger); }
+        .search-input {
+            flex: 1;
+            min-width: 0;
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 6px 10px;
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.15s;
+        }
+        .search-input:focus        { border-color: var(--border-hi); }
+        .search-input::placeholder { color: var(--text-dim); }
+
+        .dropdown-list {
+            overflow-y: auto;
+            flex: 1;
+            padding: 4px 0;
+        }
+
+        .group-label {
+            padding: 7px 12px 3px;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-dim);
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            background: var(--surface-2);
+        }
+
+        .group-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 6px 5px 10px;
+            gap: 2px;
+        }
+        .dropdown-item:hover { background: var(--hover-bg); }
+
+        .item-name {
+            flex: 1;
+            font-size: 0.85rem;
+            text-transform: capitalize;
+            color: var(--text);
+            cursor: default;
+            padding: 3px 0;
+            line-height: 1.4;
+        }
+
+        .pin-controls {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            flex-shrink: 0;
+            opacity: 0.35;
+            transition: opacity 0.12s;
+        }
+        .dropdown-item:hover .pin-controls { opacity: 1; }
+        .pin-controls:has(.pin-count:not(.hidden)) { opacity: 1; }
+
+        .btn-count {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0;
+            transition: color 0.12s, border-color 0.12s;
+        }
+        .btn-count:disabled             { color: var(--text-dim); border-color: #2e2b22; cursor: default; }
+        .btn-count:not(:disabled):hover { color: var(--accent); border-color: var(--accent); }
+        .btn-count.is-minus:not(:disabled):hover { color: var(--danger); border-color: var(--danger); }
+
+        .pin-count {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent);
+            min-width: 14px;
+            text-align: center;
+        }
+        .pin-count.hidden { display: none; }
+
+        .dropdown-empty {
+            padding: 18px 16px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.83rem;
+        }
+
+        /* ── recipe / hover card content ── */
+        .recipe-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: capitalize;
+            margin-bottom: 6px;
+        }
+
+        .recipe-meta {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .meta-tab  { font-size: 0.78rem; color: var(--text-muted); }
+
+        .tier-badge {
+            font-size: 0.67rem;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+        .tier-always    { background: #2d4a2d; color: #7ecf7e; }
+        .tier-science1  { background: #1e3a5a; color: #7ab8f0; }
+        .tier-science2  { background: #1a2e50; color: #5a9de0; }
+        .tier-magic1    { background: #3a1a5a; color: #c07af0; }
+        .tier-magic2    { background: #2a0a4a; color: #a050e0; }
+        .tier-ancient1  { background: #4a3010; color: #d4a040; }
+        .tier-ancient2  { background: #3a2008; color: #c49030; }
+        .tier-blueprint { background: #3a3a1a; color: #d4d470; }
+
+        .ingredient-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .ingredient-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--surface);
+            border: 1px solid #353020;
+            border-radius: 5px;
+            padding: 7px 12px;
+        }
+        .ing-count {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent);
+            min-width: 20px;
+            text-align: right;
+        }
+        .ing-times { color: var(--text-dim); font-size: 0.8rem; }
+        .ing-name  { font-size: 0.88rem; text-transform: capitalize; color: var(--text); }
+
+        /* ── pinned section ── */
+        .pinned-section        { display: none; }
+        .pinned-section.visible { display: block; animation: section-in 0.22s ease; }
+
+        /* ── totals section ── */
+        .totals-section {
+            display: grid;
+            grid-template-rows: 0fr;
+            overflow: hidden;
+            transition: grid-template-rows 0.4s ease;
+        }
+        .totals-section.visible { grid-template-rows: 1fr; }
+        .totals-inner {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .totals-card {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 18px;
+        }
+
+        .totals-note {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .totals-list .ing-name.is-craftable {
+            color: var(--accent-dim);
+        }
+
+        .pinned-cards {
+            columns: 300px;
+            column-gap: 10px;
+        }
+
+        .pinned-card {
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            break-inside: avoid;
+            margin-bottom: 10px;
+            animation: card-in 0.2s ease;
+        }
+        .pinned-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .pinned-card-title {
+            flex: 1;
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: capitalize;
+        }
+        .pinned-card-controls {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .pinned-card-count {
+            min-width: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+        .btn-card-dec, .btn-card-inc {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.85rem;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            line-height: 1;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .btn-card-dec:hover { color: var(--danger); border-color: var(--danger); }
+        .btn-card-inc:hover { color: var(--accent); border-color: var(--accent); }
+
+        /* ── animations ── */
+        @keyframes panel-in {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: none; }
+        }
+        @keyframes card-in {
+            from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+            to   { opacity: 1; transform: none; }
+        }
+        @keyframes count-pop {
+            0%   { transform: scale(1); }
+            40%  { transform: scale(1.45); color: var(--accent); }
+            100% { transform: scale(1); }
+        }
+        @keyframes section-in {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: none; }
+        }
+        .dropdown-panel:not([hidden]) { animation: panel-in 0.15s ease; }
+        .pinned-card-count.pop { animation: count-pop 0.22s ease; }
+
+        /* ── hover card ── */
+        #hover-card {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            width: 264px;
+            background: var(--surface-2);
+            border: 1px solid var(--border-hi);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.65);
+            z-index: 300;
+            display: none;
+            pointer-events: none;
+        }
+
+        /* ── totals tiers ── */
+        .totals-tiers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reign of Giants — Crafting Recipes</h1>
+
+    <div class="main-col">
+
+        <!-- dropdown -->
+        <div class="dropdown" id="dropdown">
+            <div class="section-label">Add items</div>
+            <button class="dropdown-trigger" id="dropdown-trigger"
+                    aria-haspopup="listbox" aria-expanded="false">
+                <span class="trigger-text empty">— browse items —</span>
+                <span class="trigger-chevron">▼</span>
+            </button>
+            <div class="dropdown-panel" id="dropdown-panel" hidden>
+                <div class="search-wrap">
+                    <input class="search-input" id="search-input"
+                           type="text" placeholder="Search items…"
+                           autocomplete="off" spellcheck="false">
+                    <button class="btn-close-panel" id="btn-close-panel" title="Close">✕</button>
+                </div>
+                <div class="dropdown-list" id="dropdown-list"></div>
+            </div>
+        </div>
+
+        <!-- totals -->
+        <div class="totals-section" id="totals-section">
+            <div class="totals-inner">
+                <div class="section-label">Total Raw Materials</div>
+                <div class="totals-card">
+                    <div class="totals-tiers" id="totals-tiers"></div>
+                    <div class="totals-note" id="totals-note"></div>
+                    <ul class="ingredient-list totals-list" id="totals-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- pinned -->
+        <div class="pinned-section" id="pinned-section">
+            <div class="section-label">Pinned</div>
+            <div class="pinned-cards" id="pinned-cards"></div>
+        </div>
+
+    </div>
+
+    <div id="hover-card"></div>
+
+    <script>
+    (() => {
+        // Tier definitions — rank drives family precedence; rank 0 (always_available)
+        // is overridden by any other tier within the same craft session.
+        const TIERS = {
+            always_available: { label: "Always Available",          cls: "tier-always",    rank: 0, family: "always"     },
+            science_tier_1:   { label: "Science Machine",           cls: "tier-science1",  rank: 1, family: "science"    },
+            science_tier_2:   { label: "Alchemy Engine",            cls: "tier-science2",  rank: 2, family: "science"    },
+            magic_tier_1:     { label: "Prestihatitator",           cls: "tier-magic1",    rank: 3, family: "magic"      },
+            magic_tier_2:     { label: "Shadow Manipulator",        cls: "tier-magic2",    rank: 4, family: "magic"      },
+            ancient_tier_1:   { label: "Ancient Station (damaged)", cls: "tier-ancient1",  rank: 5, family: "ancient"    },
+            ancient_tier_2:   { label: "Ancient Station",           cls: "tier-ancient2",  rank: 6, family: "ancient"    },
+            blueprint:        { label: "Blueprint",                 cls: "tier-blueprint", rank: 7, family: "blueprint"  },
+        };
+
+        // ── state ──────────────────────────────────────────────────────────
+        const pinnedItems = new Map();  // key → count
+        let allItems  = [];   // [{ key, label, tab, tier }, ...]
+        let gRecipes  = null;
+        let gItemMeta = null;
+
+        // ── helpers ────────────────────────────────────────────────────────
+        const titleCase = s => s.replace(/\b\w/g, c => c.toUpperCase());
+
+        function ingredientHTML(ingredients) {
+            return ingredients.map(({ item, count }) => `
+                <li>
+                    <span class="ing-count">${count}</span>
+                    <span class="ing-times">×</span>
+                    <span class="ing-name">${titleCase(item)}</span>
+                </li>`).join("");
+        }
+
+        function recipeMetaHTML(key) {
+            const recipe = gRecipes[key];
+            const meta   = gItemMeta[key];
+            if (!recipe || !meta) return "";
+            const t = TIERS[meta.tier] ?? { label: meta.tier, cls: "" };
+            return `
+                <div class="recipe-meta">
+                    <span class="meta-tab">${meta.tab}</span>
+                    <span class="tier-badge ${t.cls}">${t.label}</span>
+                </div>
+                <div class="section-label" style="margin-bottom:8px">Ingredients</div>
+                <ul class="ingredient-list">${ingredientHTML(recipe.ingredients)}</ul>
+            `;
+        }
+
+        // ── data loading ───────────────────────────────────────────────────
+        async function loadData() {
+            const [recipesRes, craftingRes] = await Promise.all([
+                fetch("resources/ROG_recipes.json"),
+                fetch("resources/ROG_crafting.json"),
+            ]);
+            const recipes  = await recipesRes.json();
+            const crafting = await craftingRes.json();
+
+            const itemMeta = {};
+            for (const tabObj of crafting) {
+                for (const [key, items] of Object.entries(tabObj)) {
+                    if (key === "tab") continue;
+                    for (const item of items)
+                        itemMeta[item.toLowerCase()] = { tab: tabObj.tab, tier: key };
+                }
+            }
+
+            const tabOrder = crafting.map(t => t.tab);
+            const groups   = Object.fromEntries(tabOrder.map(t => [t, []]));
+            for (const key of Object.keys(recipes).sort()) {
+                const meta = itemMeta[key];
+                if (meta) groups[meta.tab].push({ key, label: titleCase(key), tab: meta.tab, tier: meta.tier });
+            }
+            allItems = tabOrder.flatMap(t => groups[t]);
+
+            return { recipes, itemMeta };
+        }
+
+        // ── dropdown ───────────────────────────────────────────────────────
+        const dropdownEl  = document.getElementById("dropdown");
+        const triggerBtn  = document.getElementById("dropdown-trigger");
+        const panel       = document.getElementById("dropdown-panel");
+        const searchInput = document.getElementById("search-input");
+        const listEl      = document.getElementById("dropdown-list");
+
+        function openDropdown() {
+            panel.hidden = false;
+            triggerBtn.setAttribute("aria-expanded", "true");
+            searchInput.value = "";
+            renderList("");
+            searchInput.focus();
+        }
+
+        function closeDropdown() {
+            panel.hidden = true;
+            triggerBtn.setAttribute("aria-expanded", "false");
+            hideHoverCard();
+        }
+
+        triggerBtn.addEventListener("click", () =>
+            panel.hidden ? openDropdown() : closeDropdown());
+
+        document.getElementById("btn-close-panel")
+            .addEventListener("click", closeDropdown);
+
+        searchInput.addEventListener("input", e => renderList(e.target.value));
+
+        document.addEventListener("click", e => {
+            if (!dropdownEl.contains(e.target)) closeDropdown();
+        });
+
+        document.addEventListener("keydown", e => {
+            if (e.key === "Escape") closeDropdown();
+        });
+
+        function renderList(query) {
+            const q = query.toLowerCase().trim();
+            listEl.innerHTML = "";
+            let lastTab     = null;
+            let currentGrid = null;
+            let anyVisible  = false;
+
+            for (const item of allItems) {
+                if (q && !item.key.includes(q) && !item.tab.toLowerCase().includes(q)) continue;
+                anyVisible = true;
+
+                if (item.tab !== lastTab) {
+                    lastTab = item.tab;
+                    const g = document.createElement("div");
+                    g.className   = "group-label";
+                    g.textContent = item.tab;
+                    listEl.appendChild(g);
+                    currentGrid = document.createElement("div");
+                    currentGrid.className = "group-items";
+                    listEl.appendChild(currentGrid);
+                }
+
+                const row    = document.createElement("div");
+                row.className = "dropdown-item";
+
+                const nameEl = document.createElement("span");
+                nameEl.className   = "item-name";
+                nameEl.textContent = item.label;
+
+                // +/− quantity controls
+                const count    = pinnedItems.get(item.key) ?? 0;
+                const controls = document.createElement("div");
+                controls.className = "pin-controls";
+
+                const minusBtn = document.createElement("button");
+                minusBtn.className = "btn-count is-minus";
+                minusBtn.textContent = "−";
+                minusBtn.disabled = count === 0;
+                minusBtn.title = "Remove one";
+
+                const countEl = document.createElement("span");
+                countEl.className = "pin-count" + (count === 0 ? " hidden" : "");
+                countEl.textContent = count;
+
+                const plusBtn = document.createElement("button");
+                plusBtn.className = "btn-count";
+                plusBtn.textContent = "+";
+                plusBtn.title = "Add one";
+
+                minusBtn.addEventListener("click", e => {
+                    e.stopPropagation();
+                    decrementPin(item.key);
+                    const newCount = pinnedItems.get(item.key) ?? 0;
+                    countEl.textContent = newCount;
+                    countEl.classList.toggle("hidden", newCount === 0);
+                    minusBtn.disabled = newCount === 0;
+                });
+
+                plusBtn.addEventListener("click", e => {
+                    e.stopPropagation();
+                    incrementPin(item.key);
+                    const newCount = pinnedItems.get(item.key) ?? 0;
+                    countEl.textContent = newCount;
+                    countEl.classList.remove("hidden");
+                    minusBtn.disabled = false;
+                });
+
+                controls.appendChild(minusBtn);
+                controls.appendChild(countEl);
+                controls.appendChild(plusBtn);
+
+                row.addEventListener("mouseenter", () => showHoverCard(item.key));
+                row.addEventListener("mouseleave",  hideHoverCard);
+                row.appendChild(nameEl);
+                row.appendChild(controls);
+                currentGrid.appendChild(row);
+            }
+
+            if (!anyVisible) {
+                const el = document.createElement("div");
+                el.className   = "dropdown-empty";
+                el.textContent = "No items match.";
+                listEl.appendChild(el);
+            }
+        }
+
+        // ── hover card ─────────────────────────────────────────────────────
+        const hoverCard = document.getElementById("hover-card");
+
+        function showHoverCard(key) {
+            if (!gRecipes[key] || !gItemMeta[key]) return;
+            hoverCard.innerHTML = `
+                <div class="recipe-title">${titleCase(key)}</div>
+                ${recipeMetaHTML(key)}
+            `;
+            hoverCard.style.display = "block";
+        }
+
+        function hideHoverCard() {
+            hoverCard.style.display = "none";
+        }
+
+        // ── pin / unpin ────────────────────────────────────────────────────
+        function incrementPin(key) {
+            const prev = pinnedItems.get(key) ?? 0;
+            pinnedItems.set(key, prev + 1);
+            if (prev === 0) {
+                createPinnedCard(key);
+            } else {
+                updatePinnedCardTitle(key, prev + 1);
+            }
+            updatePinnedSection();
+        }
+
+        function decrementPin(key) {
+            const prev = pinnedItems.get(key) ?? 0;
+            if (prev <= 0) return;
+            if (prev === 1) {
+                unpinItem(key);
+            } else {
+                pinnedItems.set(key, prev - 1);
+                updatePinnedCardTitle(key, prev - 1);
+                updatePinnedSection();
+            }
+        }
+
+        function createPinnedCard(key) {
+            const card       = document.createElement("div");
+            card.className   = "pinned-card";
+            card.dataset.key = key;
+            card.innerHTML   = `
+                <div class="pinned-card-header">
+                    <span class="pinned-card-title">${titleCase(key)}</span>
+                    <div class="pinned-card-controls">
+                        <button class="btn-card-dec" title="Remove one">−</button>
+                        <span class="pinned-card-count">1</span>
+                        <button class="btn-card-inc" title="Add one">+</button>
+                    </div>
+                </div>
+                ${recipeMetaHTML(key)}
+            `;
+            card.querySelector(".btn-card-dec").addEventListener("click", () => decrementPin(key));
+            card.querySelector(".btn-card-inc").addEventListener("click", () => incrementPin(key));
+            document.getElementById("pinned-cards").appendChild(card);
+        }
+
+        function updatePinnedCardTitle(key, count) {
+            const card = document.querySelector(`.pinned-card[data-key="${CSS.escape(key)}"]`);
+            if (!card) return;
+            const countEl = card.querySelector(".pinned-card-count");
+            countEl.textContent = count;
+            countEl.classList.remove("pop");
+            void countEl.offsetWidth;
+            countEl.classList.add("pop");
+        }
+
+        function unpinItem(key) {
+            const container  = document.getElementById("pinned-cards");
+            const survivors  = [...container.querySelectorAll(".pinned-card")];
+            const beforeRects = new Map(survivors.map(c => [c, c.getBoundingClientRect()]));
+
+            pinnedItems.delete(key);
+            document.querySelector(`.pinned-card[data-key="${CSS.escape(key)}"]`)?.remove();
+            updatePinnedSection();
+            if (!panel.hidden) renderList(searchInput.value);
+
+            requestAnimationFrame(() => {
+                const moved = [];
+                for (const card of survivors) {
+                    if (!card.isConnected) continue;
+                    const before = beforeRects.get(card);
+                    const after  = card.getBoundingClientRect();
+                    const dx = before.left - after.left;
+                    const dy = before.top  - after.top;
+                    if (dx === 0 && dy === 0) continue;
+                    card.style.transition = "none";
+                    card.style.transform  = `translate(${dx}px, ${dy}px)`;
+                    moved.push(card);
+                }
+                if (moved.length === 0) return;
+                requestAnimationFrame(() => {
+                    for (const card of moved) {
+                        card.style.transition = "transform 0.28s ease";
+                        card.style.transform  = "";
+                        card.addEventListener("transitionend",
+                            () => { card.style.transition = ""; }, { once: true });
+                    }
+                });
+            });
+        }
+
+        function updatePinnedSection() {
+            document.getElementById("pinned-section")
+                .classList.toggle("visible", pinnedItems.size > 0);
+            renderTotals();
+        }
+
+        // ── totals ─────────────────────────────────────────────────────────
+        // Recursively flatten an item's ingredients down to raw materials.
+        // Returns { itemKey: totalCount, ... }.
+        function flattenIngredients(itemKey, multiplier, seen = new Set()) {
+            const recipe = gRecipes[itemKey];
+            if (!recipe || seen.has(itemKey)) {
+                return { [itemKey]: multiplier };
+            }
+            const nextSeen = new Set(seen);
+            nextSeen.add(itemKey);
+            const result = {};
+            for (const { item, count } of recipe.ingredients) {
+                const sub = flattenIngredients(item, count * multiplier, nextSeen);
+                for (const [k, v] of Object.entries(sub))
+                    result[k] = (result[k] ?? 0) + v;
+            }
+            return result;
+        }
+
+        function getRequiredTiers() {
+            // Per family, keep only the highest-ranked tier among pinned items.
+            const familyMax = {};
+            for (const key of pinnedItems.keys()) {
+                const tier   = gItemMeta[key]?.tier;
+                const family = TIERS[tier]?.family;
+                const rank   = TIERS[tier]?.rank ?? 0;
+                if (!family) continue;
+                if (!familyMax[family] || rank > familyMax[family].rank)
+                    familyMax[family] = { tier, rank };
+            }
+            const tiers = Object.values(familyMax)
+                .sort((a, b) => a.rank - b.rank)
+                .map(v => v.tier);
+            return tiers.length > 1 ? tiers.filter(t => t !== "always_available") : tiers;
+        }
+
+        function renderTotals() {
+            const section = document.getElementById("totals-section");
+            if (pinnedItems.size === 0) {
+                section.classList.remove("visible");
+                return;
+            }
+
+            // Tier badges
+            document.getElementById("totals-tiers").innerHTML =
+                getRequiredTiers().map(tier => {
+                    const t = TIERS[tier];
+                    return `<span class="tier-badge ${t.cls}">${t.label}</span>`;
+                }).join("");
+
+            const totals = {};
+            for (const [key, qty] of pinnedItems) {
+                const sub = flattenIngredients(key, qty);
+                for (const [k, v] of Object.entries(sub))
+                    totals[k] = (totals[k] ?? 0) + v;
+            }
+
+            const sorted = Object.entries(totals)
+                .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+            const totalQty = [...pinnedItems.values()].reduce((a, b) => a + b, 0);
+            const uniqueCount = pinnedItems.size;
+            document.getElementById("totals-note").textContent =
+                `${uniqueCount} item type${uniqueCount > 1 ? "s" : ""} · ${totalQty} total, fully expanded`;
+
+            document.getElementById("totals-list").innerHTML = sorted.map(([item, count]) => {
+                const craftable = !!gRecipes[item];
+                return `<li>
+                    <span class="ing-count">${count}</span>
+                    <span class="ing-times">×</span>
+                    <span class="ing-name${craftable ? " is-craftable" : ""}">${titleCase(item)}</span>
+                </li>`;
+            }).join("");
+
+            section.classList.add("visible");
+        }
+
+        // ── init ───────────────────────────────────────────────────────────
+        (async () => {
+            const { recipes, itemMeta } = await loadData();
+            gRecipes  = recipes;
+            gItemMeta = itemMeta;
+        })();
+    })();
+    </script>
+</body>
+</html>

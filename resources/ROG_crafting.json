@@ -1,0 +1,260 @@
+[
+  {
+    "tab": "Tools",
+    "always_available": [
+      "Axe",
+      "Pickaxe",
+      "Hammer"
+    ],
+    "science_tier_1": [
+      "Shovel",
+      "Pitchfork",
+      "Razor",
+      "Feather Pencil"
+    ],
+    "science_tier_2": [
+      "Luxury Axe",
+      "Regal Shovel",
+      "Opulent Pickaxe",
+      "Saddlehorn",
+      "Saddle",
+      "War Saddle",
+      "Glossamer Saddle",
+      "Brush",
+      "Salt Lick"
+    ]
+  },
+  {
+    "tab": "Light",
+    "always_available": [
+      "Campfire",
+      "Fire Pit",
+      "Torch"
+    ],
+    "science_tier_1": [
+      "Endothermic Fire"
+    ],
+    "science_tier_2": [
+      "Miner Hat",
+      "Pumpkin Lantern",
+      "Lantern",
+      "Endothermic Fire Pit",
+      "Moggles"
+    ]
+  },
+  {
+    "tab": "Survival",
+    "always_available": [
+      "Trap",
+      "Pretty Parasol"
+    ],
+    "science_tier_1": [
+      "Bird Trap",
+      "Compass",
+      "Backpack",
+      "Healing Salve",
+      "Straw Roll",
+      "Umbrella",
+      "Bug Net",
+      "Fishing Rod"
+    ],
+    "science_tier_2": [
+      "Piggyback",
+      "Honey Poultice",
+      "Fur Roll",
+      "Tent",
+      "Thermal Stone",
+      "Siesta Lean-to",
+      "Luxury Fan",
+      "Insulated Pack"
+    ],
+    "blueprint": [
+      "Bundling Wrap"
+    ]
+  },
+  {
+    "tab": "Food",
+    "science_tier_1": [
+      "Basic Farm",
+      "Bee Box",
+      "Drying Rack",
+      "Crock Pot"
+    ],
+    "science_tier_2": [
+      "Improved Farm",
+      "Ice Box",
+      "Bucket-o-poop"
+    ]
+  },
+  {
+    "tab": "Science",
+    "always_available": [
+      "Science Machine"
+    ],
+    "science_tier_1": [
+      "Alchemy Engine",
+      "Electrical Doodad",
+      "Winterometer",
+      "Rainometer",
+      "Lightning Rod"
+    ],
+    "science_tier_2": [
+      "Divining Rod",
+      "Gunpowder",
+      "Accomploshrine",
+      "Ice Flingomatic"
+    ]
+  },
+  {
+    "tab": "Fight",
+    "always_available": [
+      "Grass Suit",
+      "Battle Spear",
+      "Battle Helm"
+    ],
+    "science_tier_1": [
+      "Spear",
+      "Log Suit",
+      "Bee Mine",
+      "Sleep Dart",
+      "Fire Dart",
+      "Blow Dart"
+    ],
+    "science_tier_2": [
+      "Ham Bat",
+      "Marble Suit",
+      "Football Helmet",
+      "Boomerang",
+      "Tooth Trap",
+      "Scalemail",
+      "Weather Pain",
+      "Morning Star"
+    ]
+  },
+  {
+    "tab": "Structures",
+    "always_available": [
+      "Spider Eggs"
+    ],
+    "science_tier_1": [
+      "Chest",
+      "Sign",
+      "Mini Sign",
+      "Wood Fence",
+      "Hay Wall",
+      "Wood Wall"
+    ],
+    "science_tier_2": [
+      "Wood Gate",
+      "Stone Wall",
+      "Pig House",
+      "Rabbit Hutch",
+      "Birdcage",
+      "Cobblestones",
+      "Wooden Flooring",
+      "Carpeted Flooring",
+      "Checkerboard Flooring",
+      "Potted Fern",
+      "Scaled Chest"
+    ]
+  },
+  {
+    "tab": "Refine",
+    "science_tier_1": [
+      "Rope",
+      "Boards",
+      "Cut Stone",
+      "Papyrus",
+      "Beeswax",
+      "Wax Paper"
+    ],
+    "magic_tier_1": [
+      "Purple Gem",
+      "Nightmare Fuel"
+    ]
+  },
+  {
+    "tab": "Magic",
+    "science_tier_1": [
+      "Prestihatitator"
+    ],
+    "magic_tier_1": [
+      "Shadow Manipulator",
+      "Meat Effigy",
+      "Pan Flute",
+      "One-man Band",
+      "Night Light",
+      "Life Giving Amulet",
+      "Chilled Amulet",
+      "Ice Staff"
+    ],
+    "magic_tier_2": [
+      "Dark Sword",
+      "Night Armor",
+      "Bat Bat",
+      "Fire Staff",
+      "Telelocator Staff",
+      "Telelocator Focus",
+      "Nightmare Amulet",
+      "Belt of Hunger",
+      "Seaworthy",
+      "Skyworthy"
+    ],
+    "blueprint": [
+      "Old Bell"
+    ]
+  },
+  {
+    "tab": "Dress",
+    "always_available": [
+      "Garland",
+      "Straw Hat"
+    ],
+    "science_tier_1": [
+      "Rabbit Earmuffs",
+      "Beefalo Hat",
+      "Top Hat",
+      "Fashion Melon"
+    ],
+    "science_tier_2": [
+      "Sewing Kit",
+      "Beekeeper Hat",
+      "Feather Hat",
+      "Bush Hat",
+      "Winter Hat",
+      "Walking Cane",
+      "Dapper Vest",
+      "Breezy Vest",
+      "Puffy Vest",
+      "Ice Cube",
+      "Summer Frest",
+      "Cat Cap",
+      "Rain Hat",
+      "Rain Coat",
+      "Hibearnation Vest",
+      "Eyebrella",
+      "Floral Shirt"
+    ]
+  },
+  {
+    "tab": "Ancient",
+    "ancient_tier_1": [
+      "Thulecite",
+      "Thulecite Wall",
+      "Thulecite Medallion",
+      "Magiluminescence",
+      "Construction Amulet",
+      "Star Caller's Staff",
+      "Deconstruction Staff"
+    ],
+    "ancient_tier_2": [
+      "The Lazy Forager",
+      "The Lazy Explorer",
+      "Thulecite Club",
+      "Thulecite Suit",
+      "Thulecite Crown",
+      "Houndius Shootius",
+      "Pick/Axe"
+    ]
+  }
+]

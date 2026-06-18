@@ -1,0 +1,2210 @@
+{
+  "accomploshrine": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 10
+      },
+      {
+        "item": "cut stone",
+        "count": 1
+      },
+      {
+        "item": "gears",
+        "count": 6
+      }
+    ]
+  },
+  "alchemy engine": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "cut stone",
+        "count": 2
+      },
+      {
+        "item": "electrical doodad",
+        "count": 2
+      }
+    ]
+  },
+  "axe": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 1
+      },
+      {
+        "item": "flint",
+        "count": 1
+      }
+    ]
+  },
+  "backpack": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 4
+      },
+      {
+        "item": "twigs",
+        "count": 4
+      }
+    ]
+  },
+  "bat bat": {
+    "ingredients": [
+      {
+        "item": "batilisk wing",
+        "count": 3
+      },
+      {
+        "item": "living log",
+        "count": 2
+      },
+      {
+        "item": "purple gem",
+        "count": 1
+      }
+    ]
+  },
+  "battle helm": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 2
+      },
+      {
+        "item": "rocks",
+        "count": 2
+      }
+    ]
+  },
+  "battle spear": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "flint",
+        "count": 2
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "bee box": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "honeycomb",
+        "count": 1
+      },
+      {
+        "item": "bee",
+        "count": 4
+      }
+    ]
+  },
+  "bee mine": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      },
+      {
+        "item": "bee",
+        "count": 4
+      },
+      {
+        "item": "flint",
+        "count": 1
+      }
+    ]
+  },
+  "beefalo hat": {
+    "ingredients": [
+      {
+        "item": "beefalo wool",
+        "count": 8
+      },
+      {
+        "item": "beefalo horn",
+        "count": 1
+      }
+    ]
+  },
+  "beekeeper hat": {
+    "ingredients": [
+      {
+        "item": "silk",
+        "count": 8
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "beeswax": {
+    "ingredients": [
+      {
+        "item": "honeycomb",
+        "count": 1
+      }
+    ]
+  },
+  "belt of hunger": {
+    "ingredients": [
+      {
+        "item": "slurper pelt",
+        "count": 6
+      },
+      {
+        "item": "rope",
+        "count": 2
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      }
+    ]
+  },
+  "bird trap": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 3
+      },
+      {
+        "item": "silk",
+        "count": 4
+      }
+    ]
+  },
+  "birdcage": {
+    "ingredients": [
+      {
+        "item": "papyrus",
+        "count": 2
+      },
+      {
+        "item": "gold nugget",
+        "count": 6
+      },
+      {
+        "item": "seeds",
+        "count": 2
+      }
+    ]
+  },
+  "boards": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 4
+      }
+    ]
+  },
+  "boomerang": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 1
+      },
+      {
+        "item": "charcoal",
+        "count": 1
+      }
+    ]
+  },
+  "breezy vest": {
+    "ingredients": [
+      {
+        "item": "koalefant trunk",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 8
+      }
+    ]
+  },
+  "brush": {
+    "ingredients": [
+      {
+        "item": "steel wool",
+        "count": 1
+      },
+      {
+        "item": "walrus tusk",
+        "count": 1
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "bucket-o-poop": {
+    "ingredients": [
+      {
+        "item": "manure",
+        "count": 3
+      },
+      {
+        "item": "bone shards",
+        "count": 2
+      },
+      {
+        "item": "log",
+        "count": 4
+      }
+    ]
+  },
+  "bug net": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "silk",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "bundling wrap": {
+    "ingredients": [
+      {
+        "item": "wax paper",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "bush hat": {
+    "ingredients": [
+      {
+        "item": "straw hat",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 1
+      },
+      {
+        "item": "berry bush item",
+        "count": 1
+      }
+    ]
+  },
+  "fire pit": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 2
+      },
+      {
+        "item": "rocks",
+        "count": 12
+      }
+    ]
+  },
+  "carpeted flooring": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      },
+      {
+        "item": "beefalo wool",
+        "count": 1
+      }
+    ]
+  },
+  "cat cap": {
+    "ingredients": [
+      {
+        "item": "cat tail",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 4
+      }
+    ]
+  },
+  "checkerboard flooring": {
+    "ingredients": [
+      {
+        "item": "marble",
+        "count": 1
+      }
+    ]
+  },
+  "chest": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 3
+      }
+    ]
+  },
+  "chilled amulet": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 3
+      },
+      {
+        "item": "blue gem",
+        "count": 1
+      }
+    ]
+  },
+  "cobblestones": {
+    "ingredients": [
+      {
+        "item": "rocky turf",
+        "count": 1
+      },
+      {
+        "item": "boards",
+        "count": 1
+      }
+    ]
+  },
+  "compass": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 1
+      },
+      {
+        "item": "papyrus",
+        "count": 1
+      }
+    ]
+  },
+  "construction amulet": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 2
+      },
+      {
+        "item": "nightmare_fuel",
+        "count": 3
+      },
+      {
+        "item": "green_gem",
+        "count": 1
+      }
+    ]
+  },
+  "crock pot": {
+    "ingredients": [
+      {
+        "item": "cut stone",
+        "count": 3
+      },
+      {
+        "item": "charcoal",
+        "count": 6
+      },
+      {
+        "item": "twigs",
+        "count": 6
+      }
+    ]
+  },
+  "cut stone": {
+    "ingredients": [
+      {
+        "item": "rocks",
+        "count": 3
+      }
+    ]
+  },
+  "dapper vest": {
+    "ingredients": [
+      {
+        "item": "hound's tooth",
+        "count": 8
+      },
+      {
+        "item": "silk",
+        "count": 6
+      }
+    ]
+  },
+  "dark sword": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 5
+      },
+      {
+        "item": "living log",
+        "count": 1
+      }
+    ]
+  },
+  "deconstruction staff": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 2
+      },
+      {
+        "item": "green gem",
+        "count": 2
+      }
+    ]
+  },
+  "divining rod": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 1
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "gears",
+        "count": 1
+      }
+    ]
+  },
+  "drying rack": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 3
+      },
+      {
+        "item": "charcoal",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 3
+      }
+    ]
+  },
+  "electrical doodad": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 2
+      },
+      {
+        "item": "cut stone",
+        "count": 1
+      }
+    ]
+  },
+  "endothermic fire pit": {
+    "ingredients": [
+      {
+        "item": "nitre",
+        "count": 2
+      },
+      {
+        "item": "cut stone",
+        "count": 4
+      },
+      {
+        "item": "electrical doodad",
+        "count": 2
+      }
+    ]
+  },
+  "eyebrella": {
+    "ingredients": [
+      {
+        "item": "deerclops eyeball",
+        "count": 1
+      },
+      {
+        "item": "twigs",
+        "count": 15
+      },
+      {
+        "item": "bone shards",
+        "count": 4
+      }
+    ]
+  },
+  "fashion melon": {
+    "ingredients": [
+      {
+        "item": "watermelon",
+        "count": 1
+      },
+      {
+        "item": "twigs",
+        "count": 3
+      }
+    ]
+  },
+  "feather hat": {
+    "ingredients": [
+      {
+        "item": "jet feather",
+        "count": 3
+      },
+      {
+        "item": "crimson feather",
+        "count": 2
+      },
+      {
+        "item": "tentacle spots",
+        "count": 2
+      }
+    ]
+  },
+  "feather pencil": {
+    "ingredients": [
+      {
+        "item": "charcoal",
+        "count": 1
+      },
+      {
+        "item": "jet feather",
+        "count": 1
+      },
+      {
+        "item": "twigs",
+        "count": 1
+      }
+    ]
+  },
+  "fire dart": {
+    "ingredients": [
+      {
+        "item": "cut reeds",
+        "count": 2
+      },
+      {
+        "item": "charcoal",
+        "count": 1
+      },
+      {
+        "item": "crimson feather",
+        "count": 1
+      }
+    ]
+  },
+  "blow dart": {
+    "ingredients": [
+      {
+        "item": "cut reeds",
+        "count": 2
+      },
+      {
+        "item": "hound's tooth",
+        "count": 1
+      },
+      {
+        "item": "azure feather",
+        "count": 1
+      }
+    ]
+  },
+  "basic farm": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 8
+      },
+      {
+        "item": "manure",
+        "count": 4
+      },
+      {
+        "item": "log",
+        "count": 4
+      }
+    ]
+  },
+  "fire staff": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      },
+      {
+        "item": "spear",
+        "count": 1
+      },
+      {
+        "item": "red gem",
+        "count": 1
+      }
+    ]
+  },
+  "fishing rod": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "silk",
+        "count": 2
+      }
+    ]
+  },
+  "floral shirt": {
+    "ingredients": [
+      {
+        "item": "papyrus",
+        "count": 3
+      },
+      {
+        "item": "silk",
+        "count": 3
+      },
+      {
+        "item": "cactus flower",
+        "count": 5
+      }
+    ]
+  },
+  "football helmet": {
+    "ingredients": [
+      {
+        "item": "pig skin",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "garland": {
+    "ingredients": [
+      {
+        "item": "petals",
+        "count": 12
+      }
+    ]
+  },
+  "grass suit": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 10
+      },
+      {
+        "item": "twigs",
+        "count": 2
+      }
+    ]
+  },
+  "gunpowder": {
+    "ingredients": [
+      {
+        "item": "rotten egg",
+        "count": 1
+      },
+      {
+        "item": "charcoal",
+        "count": 1
+      },
+      {
+        "item": "nitre",
+        "count": 1
+      }
+    ]
+  },
+  "ham bat": {
+    "ingredients": [
+      {
+        "item": "pig skin",
+        "count": 1
+      },
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "meat",
+        "count": 2
+      }
+    ]
+  },
+  "hammer": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 3
+      },
+      {
+        "item": "rocks",
+        "count": 3
+      },
+      {
+        "item": "cut grass",
+        "count": 6
+      }
+    ]
+  },
+  "hay wall": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 4
+      },
+      {
+        "item": "twigs",
+        "count": 2
+      }
+    ]
+  },
+  "healing salve": {
+    "ingredients": [
+      {
+        "item": "ashes",
+        "count": 2
+      },
+      {
+        "item": "rocks",
+        "count": 1
+      },
+      {
+        "item": "spider gland",
+        "count": 1
+      }
+    ]
+  },
+  "hibearnation vest": {
+    "ingredients": [
+      {
+        "item": "thick fur",
+        "count": 1
+      },
+      {
+        "item": "dapper vest",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "honey poultice": {
+    "ingredients": [
+      {
+        "item": "papyrus",
+        "count": 1
+      },
+      {
+        "item": "honey",
+        "count": 2
+      }
+    ]
+  },
+  "houndius shootius": {
+    "ingredients": [
+      {
+        "item": "guardian's horn",
+        "count": 1
+      },
+      {
+        "item": "deerclops eyeball",
+        "count": 1
+      },
+      {
+        "item": "thulecite",
+        "count": 5
+      }
+    ]
+  },
+  "ice box": {
+    "ingredients": [
+      {
+        "item": "cut stone",
+        "count": 1
+      },
+      {
+        "item": "gears",
+        "count": 1
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "ice cube": {
+    "ingredients": [
+      {
+        "item": "electrical doodad",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 4
+      },
+      {
+        "item": "ice",
+        "count": 10
+      }
+    ]
+  },
+  "ice flingomatic": {
+    "ingredients": [
+      {
+        "item": "gears",
+        "count": 2
+      },
+      {
+        "item": "ice",
+        "count": 15
+      },
+      {
+        "item": "electrical_doodad",
+        "count": 2
+      }
+    ]
+  },
+  "ice staff": {
+    "ingredients": [
+      {
+        "item": "spear",
+        "count": 1
+      },
+      {
+        "item": "blue gem",
+        "count": 1
+      }
+    ]
+  },
+  "insulated pack": {
+    "ingredients": [
+      {
+        "item": "thick fur",
+        "count": 1
+      },
+      {
+        "item": "gears",
+        "count": 3
+      },
+      {
+        "item": "electrical doodad",
+        "count": 3
+      }
+    ]
+  },
+  "lantern": {
+    "ingredients": [
+      {
+        "item": "light bulb",
+        "count": 2
+      },
+      {
+        "item": "twigs",
+        "count": 3
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "life giving amulet": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 3
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      },
+      {
+        "item": "red gem",
+        "count": 1
+      }
+    ]
+  },
+  "lightning rod": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 4
+      },
+      {
+        "item": "cut stone",
+        "count": 1
+      }
+    ]
+  },
+  "log suit": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 8
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "luxury axe": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "luxury fan": {
+    "ingredients": [
+      {
+        "item": "down feather",
+        "count": 5
+      },
+      {
+        "item": "cut reeds",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "magiluminescence": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 2
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 3
+      },
+      {
+        "item": "yellow gem",
+        "count": 1
+      }
+    ]
+  },
+  "marble suit": {
+    "ingredients": [
+      {
+        "item": "marble",
+        "count": 6
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "meat effigy": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "cooked meat",
+        "count": 4
+      },
+      {
+        "item": "beard hair",
+        "count": 4
+      }
+    ]
+  },
+  "miner hat": {
+    "ingredients": [
+      {
+        "item": "straw hat",
+        "count": 1
+      },
+      {
+        "item": "gold nugget",
+        "count": 1
+      },
+      {
+        "item": "fireflies",
+        "count": 1
+      }
+    ]
+  },
+  "mini sign": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      }
+    ]
+  },
+  "moggles": {
+    "ingredients": [
+      {
+        "item": "moleworm",
+        "count": 2
+      },
+      {
+        "item": "electrical doodad",
+        "count": 2
+      },
+      {
+        "item": "glow berry",
+        "count": 1
+      }
+    ]
+  },
+  "morning star": {
+    "ingredients": [
+      {
+        "item": "volt goat horn",
+        "count": 1
+      },
+      {
+        "item": "electrical doodad",
+        "count": 2
+      },
+      {
+        "item": "nitre",
+        "count": 2
+      }
+    ]
+  },
+  "night armor": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 5
+      },
+      {
+        "item": "papyrus",
+        "count": 3
+      }
+    ]
+  },
+  "night light": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 8
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      },
+      {
+        "item": "red gem",
+        "count": 1
+      }
+    ]
+  },
+  "nightmare amulet": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 6
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "purple gem",
+        "count": 2
+      }
+    ]
+  },
+  "old bell": {
+    "ingredients": [
+      {
+        "item": "glommer's wings",
+        "count": 1
+      },
+      {
+        "item": "glommer's flower",
+        "count": 1
+      }
+    ]
+  },
+  "one-man band": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 2
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "pig skin",
+        "count": 2
+      }
+    ]
+  },
+  "opulent pickaxe": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "pan flute": {
+    "ingredients": [
+      {
+        "item": "cut reeds",
+        "count": 5
+      },
+      {
+        "item": "mandrake (item)",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "papyrus": {
+    "ingredients": [
+      {
+        "item": "cut reeds",
+        "count": 4
+      }
+    ]
+  },
+  "pick/axe": {
+    "ingredients": [
+      {
+        "item": "luxury axe",
+        "count": 1
+      },
+      {
+        "item": "opulent pickaxe",
+        "count": 1
+      },
+      {
+        "item": "thulecite",
+        "count": 2
+      }
+    ]
+  },
+  "pickaxe": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "flint",
+        "count": 2
+      }
+    ]
+  },
+  "pig house": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "cut stone",
+        "count": 3
+      },
+      {
+        "item": "pig skin",
+        "count": 4
+      }
+    ]
+  },
+  "piggyback": {
+    "ingredients": [
+      {
+        "item": "pig skin",
+        "count": 4
+      },
+      {
+        "item": "silk",
+        "count": 6
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "pitchfork": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "flint",
+        "count": 2
+      }
+    ]
+  },
+  "potted fern": {
+    "ingredients": [
+      {
+        "item": "foliage",
+        "count": 2
+      },
+      {
+        "item": "broken shell",
+        "count": 1
+      }
+    ]
+  },
+  "fur roll": {
+    "ingredients": [
+      {
+        "item": "straw roll",
+        "count": 1
+      },
+      {
+        "item": "bunny puff",
+        "count": 2
+      }
+    ]
+  },
+  "improved farm": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 10
+      },
+      {
+        "item": "manure",
+        "count": 6
+      },
+      {
+        "item": "rocks",
+        "count": 4
+      }
+    ]
+  },
+  "glossamer saddle": {
+    "ingredients": [
+      {
+        "item": "living log",
+        "count": 2
+      },
+      {
+        "item": "silk",
+        "count": 4
+      },
+      {
+        "item": "butterfly wings",
+        "count": 68
+      }
+    ]
+  },
+  "prestihatitator": {
+    "ingredients": [
+      {
+        "item": "rabbit",
+        "count": 4
+      },
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "top hat",
+        "count": 1
+      }
+    ]
+  },
+  "pretty parasol": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "cut grass",
+        "count": 3
+      },
+      {
+        "item": "petals",
+        "count": 6
+      }
+    ]
+  },
+  "puffy vest": {
+    "ingredients": [
+      {
+        "item": "winter koalefant trunk",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 8
+      },
+      {
+        "item": "beefalo wool",
+        "count": 2
+      }
+    ]
+  },
+  "pumpkin lantern": {
+    "ingredients": [
+      {
+        "item": "pumpkin",
+        "count": 1
+      },
+      {
+        "item": "fireflies",
+        "count": 1
+      }
+    ]
+  },
+  "purple gem": {
+    "ingredients": [
+      {
+        "item": "red gem",
+        "count": 1
+      },
+      {
+        "item": "blue gem",
+        "count": 1
+      }
+    ]
+  },
+  "rabbit earmuffs": {
+    "ingredients": [
+      {
+        "item": "rabbit",
+        "count": 2
+      },
+      {
+        "item": "twigs",
+        "count": 1
+      }
+    ]
+  },
+  "rabbit hutch": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "carrot",
+        "count": 10
+      },
+      {
+        "item": "bunny puff",
+        "count": 4
+      }
+    ]
+  },
+  "rain coat": {
+    "ingredients": [
+      {
+        "item": "tentacle spots",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 2
+      },
+      {
+        "item": "bone shards",
+        "count": 2
+      }
+    ]
+  },
+  "rain hat": {
+    "ingredients": [
+      {
+        "item": "moleworm",
+        "count": 2
+      },
+      {
+        "item": "straw hat",
+        "count": 1
+      },
+      {
+        "item": "bone shards",
+        "count": 1
+      }
+    ]
+  },
+  "rainometer": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 2
+      }
+    ]
+  },
+  "razor": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "flint",
+        "count": 2
+      }
+    ]
+  },
+  "regal shovel": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "rope": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 3
+      }
+    ]
+  },
+  "saddle": {
+    "ingredients": [
+      {
+        "item": "beefalo wool",
+        "count": 4
+      },
+      {
+        "item": "pig skin",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 4
+      }
+    ]
+  },
+  "saddlehorn": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "bone shards",
+        "count": 2
+      },
+      {
+        "item": "jet feather",
+        "count": 1
+      }
+    ]
+  },
+  "salt lick": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "nitre",
+        "count": 4
+      }
+    ]
+  },
+  "scaled chest": {
+    "ingredients": [
+      {
+        "item": "scales",
+        "count": 1
+      },
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 10
+      }
+    ]
+  },
+  "scalemail": {
+    "ingredients": [
+      {
+        "item": "scales",
+        "count": 1
+      },
+      {
+        "item": "log suit",
+        "count": 1
+      },
+      {
+        "item": "pig skin",
+        "count": 3
+      }
+    ]
+  },
+  "science machine": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 1
+      },
+      {
+        "item": "log",
+        "count": 4
+      },
+      {
+        "item": "rocks",
+        "count": 4
+      }
+    ]
+  },
+  "seaworthy": {
+    "ingredients": [
+      {
+        "item": "sea worther",
+        "count": 1
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 4
+      }
+    ]
+  },
+  "sewing kit": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 8
+      },
+      {
+        "item": "hound's tooth",
+        "count": 2
+      }
+    ]
+  },
+  "shadow manipulator": {
+    "ingredients": [
+      {
+        "item": "living log",
+        "count": 3
+      },
+      {
+        "item": "purple gem",
+        "count": 1
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 7
+      }
+    ]
+  },
+  "shovel": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "flint",
+        "count": 2
+      }
+    ]
+  },
+  "siesta lean-to": {
+    "ingredients": [
+      {
+        "item": "silk",
+        "count": 2
+      },
+      {
+        "item": "boards",
+        "count": 4
+      },
+      {
+        "item": "rope",
+        "count": 3
+      }
+    ]
+  },
+  "sign": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      }
+    ]
+  },
+  "skyworthy": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 4
+      },
+      {
+        "item": "can of silly string",
+        "count": 1
+      }
+    ]
+  },
+  "spear": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 1
+      },
+      {
+        "item": "flint",
+        "count": 1
+      }
+    ]
+  },
+  "spider eggs": {
+    "ingredients": [
+      {
+        "item": "silk",
+        "count": 12
+      },
+      {
+        "item": "spider gland",
+        "count": 6
+      },
+      {
+        "item": "papyrus",
+        "count": 6
+      }
+    ]
+  },
+  "star caller's staff": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 2
+      },
+      {
+        "item": "yellow gem",
+        "count": 2
+      }
+    ]
+  },
+  "stone wall": {
+    "ingredients": [
+      {
+        "item": "cut stone",
+        "count": 2
+      }
+    ]
+  },
+  "straw hat": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 12
+      }
+    ]
+  },
+  "summer frest": {
+    "ingredients": [
+      {
+        "item": "rope",
+        "count": 1
+      },
+      {
+        "item": "crimson feather",
+        "count": 3
+      },
+      {
+        "item": "pig skin",
+        "count": 2
+      }
+    ]
+  },
+  "telelocator focus": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 4
+      },
+      {
+        "item": "gold nugget",
+        "count": 8
+      }
+    ]
+  },
+  "telelocator staff": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      },
+      {
+        "item": "living log",
+        "count": 2
+      },
+      {
+        "item": "purple gem",
+        "count": 2
+      }
+    ]
+  },
+  "tent": {
+    "ingredients": [
+      {
+        "item": "silk",
+        "count": 6
+      },
+      {
+        "item": "twigs",
+        "count": 4
+      },
+      {
+        "item": "rope",
+        "count": 3
+      }
+    ]
+  },
+  "the lazy explorer": {
+    "ingredients": [
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      },
+      {
+        "item": "walking cane",
+        "count": 1
+      },
+      {
+        "item": "orange gem",
+        "count": 2
+      }
+    ]
+  },
+  "the lazy forager": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 2
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 3
+      },
+      {
+        "item": "orange gem",
+        "count": 1
+      }
+    ]
+  },
+  "thermal stone": {
+    "ingredients": [
+      {
+        "item": "rocks",
+        "count": 10
+      },
+      {
+        "item": "pickaxe",
+        "count": 1
+      },
+      {
+        "item": "flint",
+        "count": 3
+      }
+    ]
+  },
+  "thulecite": {
+    "ingredients": [
+      {
+        "item": "thulecite fragments",
+        "count": 6
+      }
+    ]
+  },
+  "thulecite club": {
+    "ingredients": [
+      {
+        "item": "living log",
+        "count": 3
+      },
+      {
+        "item": "thulecite",
+        "count": 4
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      }
+    ]
+  },
+  "thulecite crown": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 4
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      }
+    ]
+  },
+  "thulecite medallion": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 2
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 2
+      }
+    ]
+  },
+  "thulecite suit": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 6
+      },
+      {
+        "item": "nightmare fuel",
+        "count": 4
+      }
+    ]
+  },
+  "thulecite wall": {
+    "ingredients": [
+      {
+        "item": "thulecite",
+        "count": 1
+      }
+    ]
+  },
+  "tooth trap": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 1
+      },
+      {
+        "item": "rope",
+        "count": 1
+      },
+      {
+        "item": "hound's tooth",
+        "count": 1
+      }
+    ]
+  },
+  "top hat": {
+    "ingredients": [
+      {
+        "item": "silk",
+        "count": 6
+      }
+    ]
+  },
+  "torch": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 2
+      },
+      {
+        "item": "twigs",
+        "count": 2
+      }
+    ]
+  },
+  "trap": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 6
+      },
+      {
+        "item": "twigs",
+        "count": 2
+      }
+    ]
+  },
+  "straw roll": {
+    "ingredients": [
+      {
+        "item": "cut grass",
+        "count": 6
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "sleep dart": {
+    "ingredients": [
+      {
+        "item": "cut reeds",
+        "count": 2
+      },
+      {
+        "item": "stinger",
+        "count": 1
+      },
+      {
+        "item": "jet feather",
+        "count": 1
+      }
+    ]
+  },
+  "umbrella": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 6
+      },
+      {
+        "item": "pig skin",
+        "count": 1
+      },
+      {
+        "item": "silk",
+        "count": 2
+      }
+    ]
+  },
+  "walking cane": {
+    "ingredients": [
+      {
+        "item": "gold nugget",
+        "count": 2
+      },
+      {
+        "item": "walrus tusk",
+        "count": 1
+      },
+      {
+        "item": "twigs",
+        "count": 4
+      }
+    ]
+  },
+  "wax paper": {
+    "ingredients": [
+      {
+        "item": "beeswax",
+        "count": 1
+      },
+      {
+        "item": "papyrus",
+        "count": 1
+      }
+    ]
+  },
+  "weather pain": {
+    "ingredients": [
+      {
+        "item": "down feather",
+        "count": 10
+      },
+      {
+        "item": "volt goat horn",
+        "count": 1
+      },
+      {
+        "item": "gears",
+        "count": 1
+      }
+    ]
+  },
+  "winter hat": {
+    "ingredients": [
+      {
+        "item": "beefalo wool",
+        "count": 4
+      },
+      {
+        "item": "silk",
+        "count": 4
+      }
+    ]
+  },
+  "wood fence": {
+    "ingredients": [
+      {
+        "item": "twigs",
+        "count": 3
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "wood gate": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "wood wall": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "rope",
+        "count": 1
+      }
+    ]
+  },
+  "wooden flooring": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 1
+      }
+    ]
+  },
+  "war saddle": {
+    "ingredients": [
+      {
+        "item": "rabbit",
+        "count": 4
+      },
+      {
+        "item": "steel wool",
+        "count": 4
+      },
+      {
+        "item": "log",
+        "count": 10
+      }
+    ]
+  },
+  "winterometer": {
+    "ingredients": [
+      {
+        "item": "boards",
+        "count": 2
+      },
+      {
+        "item": "gold nugget",
+        "count": 2
+      }
+    ]
+  },
+  "campfire": {
+    "ingredients": [
+      {
+        "item": "log",
+        "count": 2
+      },
+      {
+        "item": "cut grass",
+        "count": 3
+      }
+    ]
+  },
+  "endothermic fire": {
+    "ingredients": [
+      {
+        "item": "nitre",
+        "count": 2
+      },
+      {
+        "item": "cut grass",
+        "count": 3
+      }
+    ]
+  }
+}
