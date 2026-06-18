@@ -300,6 +300,26 @@
         .pinned-section        { display: none; }
         .pinned-section.visible { display: block; animation: section-in 0.22s ease; }
 
+        .pinned-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 7px;
+        }
+        .pinned-section-header .section-label { margin-bottom: 0; }
+
+        .btn-clear-all {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-dim);
+            font-size: 0.72rem;
+            padding: 2px 9px;
+            cursor: pointer;
+            transition: color 0.12s, border-color 0.12s;
+        }
+        .btn-clear-all:hover { color: var(--danger); border-color: var(--danger); }
+
         /* ── totals section ── */
         .totals-section {
             display: grid;
@@ -469,7 +489,10 @@
 
         <!-- pinned -->
         <div class="pinned-section" id="pinned-section">
-            <div class="section-label">Pinned</div>
+            <div class="pinned-section-header">
+                <div class="section-label">Pinned</div>
+                <button class="btn-clear-all" id="btn-clear-all" title="Clear all pinned items">Clear all</button>
+            </div>
             <div class="pinned-cards" id="pinned-cards"></div>
         </div>
 
@@ -703,6 +726,7 @@
                 updatePinnedCardTitle(key, prev + 1);
             }
             updatePinnedSection();
+            saveState();
         }
 
         function decrementPin(key) {
@@ -715,6 +739,7 @@
                 updatePinnedCardTitle(key, prev - 1);
                 updatePinnedSection();
             }
+            saveState();
         }
 
         function createPinnedCard(key) {
@@ -782,10 +807,38 @@
             });
         }
 
+        function clearAllPinned() {
+            pinnedItems.clear();
+            document.getElementById("pinned-cards").innerHTML = "";
+            updatePinnedSection();
+            if (!panel.hidden) renderList(searchInput.value);
+            saveState();
+        }
+
+        document.getElementById("btn-clear-all").addEventListener("click", clearAllPinned);
+
         function updatePinnedSection() {
             document.getElementById("pinned-section")
                 .classList.toggle("visible", pinnedItems.size > 0);
             renderTotals();
+        }
+
+        // ── persistence ────────────────────────────────────────────────────
+        function saveState() {
+            localStorage.setItem('rog-pinned', JSON.stringify([...pinnedItems]));
+        }
+
+        function restoreState() {
+            try {
+                const saved = JSON.parse(localStorage.getItem('rog-pinned') ?? '[]');
+                for (const [key, count] of saved) {
+                    if (!gRecipes[key] || !gItemMeta[key] || count < 1) continue;
+                    pinnedItems.set(key, count);
+                    createPinnedCard(key);
+                    if (count > 1) updatePinnedCardTitle(key, count);
+                }
+                if (pinnedItems.size > 0) updatePinnedSection();
+            } catch (_) {}
         }
 
         // ── totals ─────────────────────────────────────────────────────────
@@ -870,8 +923,13 @@
             const { recipes, itemMeta } = await loadData();
             gRecipes  = recipes;
             gItemMeta = itemMeta;
+            restoreState();
         })();
     })();
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+    }
     </script>
 </body>
 </html>
